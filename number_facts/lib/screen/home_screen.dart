@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ElevatedButton(
                 onPressed: () async{
-                  final number = number_controller.text ?? 'No number provided';
+                  final number = number_controller.text;
                   final result = await getNumberFact(number: number);
                   
                   setState(() {
